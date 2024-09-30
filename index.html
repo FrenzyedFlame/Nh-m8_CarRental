@@ -1,0 +1,179 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Conpatible" content ="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuê xe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="img/jeep.png" alt=""></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#ride">Thuê xe</a></li>
+            <li><a href="#services">Dịch vụ</a></li>
+            <li><a href="#about">Về chúng tôi</a></li>
+            <li><a href="#reviews">Đánh giá</a></li>
+        </ul>
+
+        <div class="header-btn">
+            <?php if (isset($_SESSION['user_id'])): ?>
+                <!-- Hiển thị avatar nếu người dùng đã đăng nhập -->
+                <div class="user-menu">
+                    <img src="<?php echo $_SESSION['avatar']; ?>" alt="Avatar" class="user-avatar" onclick="toggleUserMenu()">
+                    <ul id="user-dropdown" class="user-dropdown">
+                        <li><a href="account.php">Tài khoản</a></li>
+                        <li><a href="settings.php">Cài đặt</a></li>
+                        <li><a href="logout.php">Đăng xuất</a></li>
+                    </ul>
+                </div>
+            <?php else: ?>
+                <!-- Nếu chưa đăng nhập, hiển thị nút Đăng nhập và Đăng ký -->
+                <a href="regis.html" class="sign-up">Đăng ký</a>
+                <a href="login.html" class="sign-in">Đăng nhập</a>
+            <?php endif; ?>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="text">
+            <h1><span>LOOKING</span>looking for <br>rent a car</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adi <br>pisicing elit. Odio!</p>
+            <div class="app-stores">
+                <img src="img/ios.png" alt="">
+                <img src="img/512x512.png" alt="">
+            </div>
+        </div>
+
+        <div class="form-container">
+            <form action="">
+                <div class="input-box">
+                    <span>Location</span>
+                    <input type="search" placeholder="Search" name="" id="">
+                </div>
+
+                <div class="input-box">
+                    <span>Pick-Up Date</span>
+                    <input type="date" name="" id="">
+                </div>
+
+                <div class="input-box">
+                    <span>Return Date</span>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="header-btn">
+                    <a href="CarList.html" class="sign-in">Tìm xe</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Các phần còn lại của trang không thay đổi -->
+    <section class="ride" id="ride">
+        <div class="heading">
+            <span>how its work</span>
+            <h1>rent with 3 easy steps</h1>
+        </div>
+        <div class="ride-container">
+            <div class="box">
+                <a href="#"><i class='bx bx-map'></i></a>
+                <h2>Choose A Location</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex et quia quisquam accusamus harum.</p>
+            </div>
+
+            <div class="box">
+                <a href="#"><i class='bx bxs-calendar-check'></i></a>
+                <h2>Pick-Up Date</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex et quia quisquam accusamus harum.</p>
+            </div>
+
+            <div class="box">
+                <a href="#"><i class='bx bxs-calendar-star'></i></a>
+                <h2>Book A Car</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex et quia quisquam accusamus harum.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tiếp tục các phần nội dung của trang -->
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Best Services</span>
+            <h1>Explore Out Top Deals <br>From Top Dealers</h1>
+        </div>
+        <div class="services-container">
+            <!-- ... -->
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <span>About us</span>
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+        </div>
+
+        <div class="about-container">
+            <!-- ... -->
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="heading"></div>
+            <span>Reviews</span>
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+        </div>
+
+        <div class="reviews-container">
+            <!-- ... -->
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Subcribe to news</h2>
+        <div class="box">
+            <input type="text" placeholder="Enter Email...." name="" id="">
+            <a href="#" class="btn">Subcribe</a>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p><i class='bx bx-copyright'></i> Nhóm 8 All Right Reversed</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+        </div>
+    </div>
+
+    <script>
+        function toggleUserMenu() {
+            var dropdown = document.getElementById("user-dropdown");
+            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+        }
+
+        // Ẩn dropdown khi nhấp ra ngoài
+        window.onclick = function(event) {
+            if (!event.target.matches('.user-avatar')) {
+                var dropdown = document.getElementById("user-dropdown");
+                if (dropdown.style.display === "block") {
+                    dropdown.style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
