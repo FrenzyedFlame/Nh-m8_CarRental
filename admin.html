@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Side Menu -->
+        <div class="side-menu">
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#" class="customer-management">Customer Management</a></li>
+                <li><a href="#" class="car-management">Car Management</a></li>
+                <li><a href="#" class="booking-management">Booking Management</a></li>
+                <li><a href="#" class="revenue-management">Revenue Management</a></li>
+                <li><a href="#" class="employee-management">Employee Management</a></li>
+                <li><a href="#" class="statistics-report">Statistics Report</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container">
+            <h2>Admin Dashboard</h2>
+
+            <!-- Statistics Section -->
+            <div class="section statistics">
+                <h3>Statistics Overview</h3>
+                <div class="stat-card">
+                    <h4>Total Customers</h4>
+                    <p>150</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Total Cars</h4>
+                    <p>75</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Total Revenue</h4>
+                    <p>$25,000</p>
+                </div>
+                <div class="stat-card">
+                    <h4>Total Bookings</h4>
+                    <p>200</p>
+                </div>
+            </div>
+
+            <!-- Management Sections -->
+            <div class="section management">
+                <h3>Manage Sections</h3>
+                <div class="manage-links">
+                    <a href="#" class="manage-link active">Customer Management</a>
+                    <a href="#" class="manage-link">Car Management</a>
+                    <a href="#" class="manage-link">Booking Management</a>
+                    <a href="#" class="manage-link">Revenue Management</a>
+                    <a href="#" class="manage-link">Employee Management</a>
+                    <a href="#" class="manage-link">Statistics Report</a>
+                </div>
+            </div>
+
+            <!-- Customer Management Section -->
+            <div class="section customer-management">
+                <h3>Customer Management</h3>
+                <button class="add-customer-button">Add New Customer</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer Name</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>john@example.com</td>
+                            <td>123-456-7890</td>
+                            <td>
+                                <button class="edit-button">Edit</button>
+                                <button class="delete-button">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Smith</td>
+                            <td>jane@example.com</td>
+                            <td>987-654-3210</td>
+                            <td>
+                                <button class="edit-button">Edit</button>
+                                <button class="delete-button">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Car Management Section -->
+            <div class="section car-management">
+                <h3>Car Management</h3>
+                <button class="add-car-button">Add New Car</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Partner ID</th>
+                            <th>Car Name</th>
+                            <th>Price</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                            <th>License PLate</th>
+                            <th>Car type ID</th>
+                            <th>Transmission Type</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>NGANDU</td>
+                            <td>Toyota Corolla</td>
+                            <td>100000$</td>
+                            <td>Xe nghe vcl</td>
+                            <td>Available</td>
+                            <td>43-D20905</td>
+                            <td>Yoyota</td>
+                            <td>So tu dong</td>
+                            <td>
+                                <button class="edit-button">Edit</button>
+                                <button class="delete-button">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Honda Civic</td>
+                            <td>Rented</td>
+                            <td>
+                                <button class="edit-button">Edit</button>
+                                <button class="delete-button">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Employee Management Section -->
+            <div class="section employee-management">
+                <h3>Employee Management</h3>
+                <button class="add-employee-button">Add New Employee</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Role</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Smith</td>
+                            <td>johnsmith@example.com</td>
+                            <td>123-456-7890</td>
+                            <td>Manager</td>
+                            <td>
+                                <button class="edit-button">Edit</button>
+                                <button class="delete-button">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mary Johnson</td>
+                            <td>maryj@example.com</td>
+                            <td>987-654-3210</td>
+                            <td>Staff</td>
+                            <td>
+                                <button class="edit-button">Edit</button>
+                                <button class="delete-button">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Revenue Management Section -->
+            <div class="section revenue-management">
+                <h3>Revenue Management</h3>
+                <button class="add-revenue-button">Add New Revenue Record</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>$200</td>
+                            <td>2024-10-01</td>
+                            <td>Rental Income</td>
+                            <td>
+                                <button class="edit-button">Edit</button>
+                                <button class="delete-button">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>$300</td>
+                            <td>2024-10-02</td>
+                            <td>Rental Income</td>
+                            <td>
+                                <button class="edit-button">Edit</button>
+                                <button class="delete-button">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Statistics Report Section -->
+            <div class="section statistics-report">
+                <h3>Statistics Report</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Report Type</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Total Cars Rented</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Total Revenue This Month</td>
+                            <td>$5,000</td>
+                        </tr>
+                        <tr>
+                            <td>Average Rental Duration (days)</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Top Customer</td>
+                            <td>John Doe</td>
+                        </tr>
+                        <tr>
+                            <td>Most Rented Car</td>
+                            <td>Toyota Corolla</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

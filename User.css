@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2C2C2C;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.side-menu {
+    background-color: #1A1A1A;
+    width: 220px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    margin-bottom: 20px;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 18px;
+    display: block;
+}
+
+.side-menu ul li a:hover {
+    color: #5A9;
+}
+
+.side-menu ul li a.active {
+    color: #5A9;
+}
+
+.container {
+    flex: 1;
+    background-color: #333;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.profile-pic {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-pic input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.profile-pic button {
+    padding: 8px 20px;
+    background-color: #5A9;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    margin-bottom: 15px;
+    color: #ddd;
+    font-size: 18px;
+}
+
+.section label {
+    display: block;
+    margin-bottom: 8px;
+    color: #bbb;
+}
+
+.section input[type="text"],
+.section input[type="email"],
+.section input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.section button {
+    padding: 10px 0;
+    width: 100%;
+    background-color: #5A9;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.section button:hover {
+    background-color: #48a;
+}

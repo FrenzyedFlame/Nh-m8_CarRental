@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+    <link rel="stylesheet" href="User.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Side Menu -->
+        <div class="side-menu">
+            <ul>
+                <li><a href="#">Bookmarks</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Reader Settings</a></li>
+                <li><a href="#" class="active">Account Settings</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container">
+            <!-- Profile Picture Section -->
+            <div class="profile-pic">
+                <img src="https://via.placeholder.com/100" alt="Profile Picture">
+                <input type="file" accept="image/jpeg,image/png,image/gif">
+                <button>Upload</button>
+            </div>
+
+            <!-- Display Name Section -->
+            <div class="section">
+                <h3>Change Your Display Name</h3>
+                <label for="current-display-name">Current Display name</label>
+                <input type="text" id="current-display-name" value="blackprince81" readonly>
+                <label for="new-display-name">New Display name</label>
+                <input type="text" id="new-display-name" value="nbq2607@gmail.com">
+                <button>Submit</button>
+            </div>
+
+            <!-- Email Address Section -->
+            <div class="section">
+                <h3>Change Your Email Address</h3>
+                <label for="email">Your email</label>
+                <input type="email" id="email" value="nbq2607@gmail.com" readonly>
+                <label for="new-email">New email address</label>
+                <input type="email" id="new-email">
+                <button>Submit</button>
+            </div>
+
+            <!-- Password Section -->
+            <div class="section">
+                <h3>Change Your Password</h3>
+                <label for="current-password">Current Password</label>
+                <input type="password" id="current-password" value="********" readonly>
+                <label for="new-password">New Password</label>
+                <input type="password" id="new-password">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password">
+                <button>Submit</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
